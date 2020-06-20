@@ -18,13 +18,13 @@ We introduce Evolution-based Soft Actor Critic (ESAC), an algorithm combining ES
 
 
 <h3>Automatic Mutation Tuning (AMT)</h3>  
-Instead of maximizing randomness in the policy space, we maximize it in the weight space. We automatically tune $\sigma$ of the initial distribution. $\sigma$ is updated at fixed timesteps in a forward-ascent manner in order to expand the search horizon of population. AMT motivates guided exploration towards the objective enabling the agent to maximize rewards as randomly as possible. AMT makes use of the SmoothL1 (Huber) loss function. The update rule is mathematically expressed as-  
+Instead of maximizing randomness in the policy space, we maximize it in the weight space. We automatically tune the deviation of the initial distribution. Mutation rate is updated at fixed timesteps in a forward-ascent manner in order to expand the search horizon of population. AMT motivates guided exploration towards the objective enabling the agent to maximize rewards as randomly as possible. AMT makes use of the SmoothL1 (Huber) loss function. The update rule is mathematically expressed as-  
 
-<center>$\sigma_{(t+1)} \xleftarrow[]{} \sigma_{(t)} + \frac{\alpha_{es}}{n\sigma_{(t)}}SmoothL1(R_{max},R_{avg})$</center>  
+![equation](https://latex.codecogs.com/png.latex?\sigma_{(t&plus;1)}&space;\xleftarrow[]{}&space;\sigma_{(t)}&space;&plus;&space;clip(\frac{\alpha_{es}}{n\sigma_{(t)}}SmoothL1(R_{max},R_{avg}),0,&space;\zeta))  
 
-Here, $R_{max}$ is the reward observed by winner offspring, $R_{avg}$ is the mean reward of the population with $\sigma_{(t)}$ and $\sigma_{(t+1)}$ the mutation rates at timesteps $t$ and $t+1$ respectively. While exploring in weight space, the SmoothL1 loss tends to take up large values. This is indicative of the fact that the deviation between the winner and other learners of the population is significantly high. In order to reduce excessive noise from weight perturbations $\epsilon_{i}$, we clip the update in a small region parameterized by $\zeta$. Suitable values for $\zeta$ range between $1e^{-6}$ to $1e^{-2}$. The clipped update is mathematically expressed as-  
+While exploring in weight space, the SmoothL1 loss tends to take up large values. This is indicative of the fact that the deviation between the winner and other learners of the population is significantly high. In order to reduce excessive noise from weight perturbations, we clip the update in a small region parameterized by a clip parameter. Suitable values for clip parameter range between 1e-6 to 1e^-2. The clipped update is mathematically expressed as-  
 
-<center>$\sigma_{(t+1)} \xleftarrow[]{} \sigma_{(t)} + clip(\frac{\alpha_{es}}{n\sigma_{(t)}}SmoothL1(R_{max},R_{avg}),0, \zeta)$</center>  
+![equation](https://latex.codecogs.com/png.latex?\sigma_{(t&plus;1)}&space;\xleftarrow[]{}&space;\sigma_{(t)}&space;&plus;&space;clip(\frac{\alpha_{es}}{n\sigma_{(t)}}SmoothL1(R_{max},R_{avg}),0,&space;\zeta))  
 
 <h3>Maintaining State of the Art</h3>  
 ESAC demonstrates comparable performance and sample-efficiency as state-of-the-art SAC and TD3. Moreover, in environments where SAC often learns a sub-optimal policy, ESAC makes use of evolution-based weight-space exploration to converge to better policies. For instance, ESAC demonstrates state-of-the-art performance in the Swimmer-v2 and LunarLanderContinuous-v2 environments which consist of local basins.  
