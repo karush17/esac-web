@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<span style="color:grey">8 minute read</span>
+<h1>Evolution-based Soft Actor-Critic for Scalable Reinforcement Learning</h1>
 
 <h3>The rise of Reinforcement Learning</h3>  
 <p>Concepts and applications of Reinforcement Learning (RL) have seen a tremendous growth over the past decade. These consist of applications in arcade games, board games and lately, robotic control tasks. Primary reason for this growth is the usage of computationally efficient function approximators such as neural networks. Modern-day RL algorithms make use of parallelization to reduce training times and boost agent's performance through effective exploration giving rise to scalable methods, commonly referred to as Scalable Reinforcement Learning (SRL). However, a number of open problems such as approximation bias, lack of scalability in the case of long time horizons and lack of diverse exploration restrict the application of SRL to complex control and robotic tasks.</p>  
