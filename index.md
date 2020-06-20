@@ -3,15 +3,7 @@ layout: default
 ---
 
 
-
-<pre>
-<p align="center"><img src="/assets/css/cmte.PNG" height="150" widht="150"/>              <img src="/assets/css/rbc.png" height="150" widht="150"/>             <img src="/assets/css/uoft.png" height="150" widht="150"/></p>
-
-<center><h3>            Karush Suri                 Xiao Qi Shi                 Yuri A. Lawryshyn       Konstantinos N. Plataniotis<br/>
-    University of Toronto         RBC Captial Markets           University of Toronto        University of Toronto<br/>
-karush.suri@mail.utoronto.ca     xiaoqi.shi@borealisai.ca     yuri.lawryshyn@utoronto.ca     kostas@ece.utoronto.ca</h3></center>
-</pre>
-
+<p align="center">Karush Suri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Xiao Qi Shi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yuri A. Lawryshyn&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Konstantinos N. Plataniotis</p>
 
 <h2>About ESAC</h2>
 
