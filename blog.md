@@ -29,12 +29,12 @@ While exploring in weight space, the SmoothL1 loss tends to take up large values
 <h3>Maintaining State of the Art</h3>  
 ESAC demonstrates comparable performance and sample-efficiency as state-of-the-art SAC and TD3. Moreover, in environments where SAC often learns a sub-optimal policy, ESAC makes use of evolution-based weight-space exploration to converge to better policies. For instance, ESAC demonstrates state-of-the-art performance in the Swimmer-v2 and LunarLanderContinuous-v2 environments which consist of local basins.  
 
-<p align="center"><img src="/images/swimmer.png" height="250" width="350" /><img src="/images/lunarlander.png" height="250" width="350" /></p>  
+<p align="center"><img src="/images/swimmer.GIF" height="250" width="350" /><img src="/images/lunarlander.GIF" height="250" width="350" /></p>  
 
 <h3>Scalability is the Key</h3>  
 Figure presents the scalable nature of ESAC equivalent to ES on the HalfCheetah-v2 and Ant-v2 MuJoCo tasks. Average wall-clock time per episode is reduced utilizing CPU resources which is found to be favourable for evolution-based methods. Moreover, the variation depicts consistency with the increasing number of members in the population indicating large-scale utility of the proposed method. A notable finding here is that although ESAC incorporates gradient-based backpropagation updates, it is able to preserve its scalable nature by making use of evolutions as dominant operations during the learning process. Reduction in the number of SAC updates by exponentially annealing the gradient interval allows ESAC to reduce computation times and simultaneously explore using AMT. However, the average episode time reaches a minimum value which is greater than the episode duration obtained by ES. This occurs as a result of the high probability of SAC updates early in training which is an essential requirement for avoiding local basins and sub-optimal convergence.  
 
-<p align="center"><img src="/images/halfcheetah.png" height="250" width="350" /><img src="/images/ant.png" height="250" width="350" /></p>  
+<p align="center"><img src="/images/halfcheetah.GIF" height="250" width="350" /><img src="/images/ant.GIF" height="250" width="350" /></p>  
 
 
 <h3>References</h3>  
