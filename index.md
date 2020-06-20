@@ -5,7 +5,7 @@ layout: default
 
 
 <pre>
-<p align="center"><img src="/assets/cmte.PNG" height="150" widht="150"/>              <img src="/assets/rbc.png" height="150" widht="150"/>             <img src="/assets/uoft.png" height="150" widht="150"/></p>
+<p align="center"><img src="/assets/css/cmte.PNG" height="150" widht="150"/>              <img src="/assets/css/rbc.png" height="150" widht="150"/>             <img src="/assets/css/uoft.png" height="150" widht="150"/></p>
 
 <center><h3>            Karush Suri                 Xiao Qi Shi                 Yuri A. Lawryshyn       Konstantinos N. Plataniotis<br/>
     University of Toronto         RBC Captial Markets           University of Toronto        University of Toronto<br/>
@@ -20,7 +20,7 @@ karush.suri@mail.utoronto.ca     xiaoqi.shi@borealisai.ca     yuri.lawryshyn@uto
 Evolution-based   Soft   Actor   Critic(ESAC) is  an  algorithm  combining  Evolution Strategies (ES)  with  Soft Actor-Critic (SAC)  for state-of-the-performance equivalent to SAC and scalability comparable to ES. ESAC abstracts exploration from exploitation by exploring policies in weight space using evolutions and optimizing gradient-based knowledge using the SAC framework. ESAC makes use ofa novel soft winner selection function  and carries out genetic crossovers in hindsight. ESAC also introduces the novel Automatic Mutation Tuning (AMT) which maximizes the mutation rate of ES in a small clipped region and provides significant hyperparameter robustness.  
 
 
-<p align="center"><img src="/assets/schematic.gif" height="400" width="650" /></p>
+<p align="center"><img src="/assets/css/schematic.gif" height="400" width="650" /></p>
 
 
 <h2>Scalable Reinforcement Learning</h2>
