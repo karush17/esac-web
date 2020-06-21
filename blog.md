@@ -29,8 +29,6 @@ While exploring in weight space, the SmoothL1 loss tends to take up large values
 <h3>Maintaining State of the Art</h3>  
 ESAC demonstrates comparable performance and sample-efficiency as state-of-the-art SAC and TD3. Moreover, in environments where SAC often learns a sub-optimal policy, ESAC makes use of evolution-based weight-space exploration to converge to better policies. For instance, ESAC demonstrates state-of-the-art performance in the Swimmer-v2 and LunarLanderContinuous-v2 environments which consist of local basins.  
 
-![swimmer](https://github.com/karush17/esac-web/blob/master/images/swimmer.png)  
-
 <p align="center"><img src="/images/swimmer.png" height="250" width="350" />&nbsp;&nbsp;<img src="/images/lunarlander.png" height="250" width="350" /></p>  
 
 <h3>Scalability is the Key</h3>  
