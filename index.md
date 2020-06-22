@@ -6,7 +6,7 @@ layout: default
 
 <h3>About ESAC</h3>
 
-Evolution-based   Soft   Actor   Critic(ESAC) is  an  algorithm  combining  Evolution Strategies (ES)  with  Soft Actor-Critic (SAC)  for state-of-the-performance equivalent to SAC and scalability comparable to ES. ESAC abstracts exploration from exploitation by exploring policies in weight space using evolutions and optimizing gradient-based knowledge using the SAC framework. ESAC makes use ofa novel soft winner selection function  and carries out genetic crossovers in hindsight. ESAC also introduces the novel Automatic Mutation Tuning (AMT) which maximizes the mutation rate of ES in a small clipped region and provides significant hyperparameter robustness.  
+Evolution-based   Soft   Actor   Critic (ESAC) is  an  algorithm  combining  Evolution Strategies (ES)  with  Soft Actor-Critic (SAC)  for state-of-the-performance equivalent to SAC and scalability comparable to ES. ESAC abstracts exploration from exploitation by exploring policies in weight space using evolutions and optimizing gradient-based knowledge using the SAC framework. ESAC makes use of a novel soft winner selection function  and carries out genetic crossovers in hindsight. ESAC also introduces the novel Automatic Mutation Tuning (AMT) which maximizes the mutation rate of ES in a small clipped region and provides significant hyperparameter robustness.  
 
 
 <p align="center"><img src="/images/schematic.gif" height="400" width="650" /></p>
